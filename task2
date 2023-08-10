@@ -1,0 +1,37 @@
+# include <iostream>
+using namespace std;
+
+int main() {
+
+  char c;
+  float a, b;
+  cout << "Enter two operands: ";
+  cin >> a >> b;
+  cout << "Enter operator: +, -, *, /: ";
+  cin >> c;
+
+  switch(c) {
+
+    case '+':
+      cout << a << " + " << b << " = " << a + b;
+      break;
+
+    case '-':
+      cout << a << " - " << b << " = " << a - b;
+      break;
+
+    case '*':
+      cout << a << " * " << b << " = " << a * b;
+      break;
+
+    case '/':
+      cout << a << " / " << b << " = " << a / b;
+      break;
+
+    default:
+      cout << "Error! Choose among the above operator";
+      break;
+  }
+
+  return 0;
+}
