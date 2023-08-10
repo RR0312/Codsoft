@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i;
+    float a, b=0, c;
+    cout<<"Enter Marks obtained in 5 Subjects: ";
+    for(i=0; i<5; i++)
+    {
+        cin>>a;
+        b = b+a;
+    }
+    c = b/5;
+    cout<<"\nGrade = ";
+    if(c>=91 && c<=100)
+        cout<<"A1";
+    else if(c>=81 && c<91)
+        cout<<"A2";
+    else if(c>=71 && c<81)
+        cout<<"B1";
+    else if(c>=61 && c<71)
+        cout<<"B2";
+    else if(c>=51 && c<61)
+        cout<<"C1";
+    else if(c>=41 && c<51)
+        cout<<"C2";
+    else if(c>=33 && c<41)
+        cout<<"D";
+    else if(c>=21 && c<33)
+        cout<<"E1";
+    else if(c>=0 && c<21)
+        cout<<"E2";
+    else
+        cout<<"Invalid!";
+    cout<<endl;
+    return 0;
+}
